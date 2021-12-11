@@ -1,0 +1,5 @@
+# Ingress
+
+> Ingress是对集群中服务的外部访问进行管理的API对象
+> Ingress可以提供负载均衡、SSL终结和基于名称的虚拟托管
+> [Kubernetes 之 Ingress 服务](https://link.segmentfault.com/?enc=A1KBQvuvqknCHOz%2BkIsJyQ%3D%3D.nxRw8in7TlHbVG6VWqqCPpsiikvwvK9b%2FE0TYXZun3v6CNStwz0vBzY1AHwf6%2FRtgTb%2BTaHA3XGKEojQUmoBrRqrxNfFPB0rGdj8DNSF%2FwYnpvH8E4rp7pGirDs4R73bXKDHE6wNL21mAJ%2BIBQk9UohdrJ%2B%2FC%2BuvXV6TGLuvVZDQ29reQaeRZcqd8LXsjioFGK%2BR1T93vR17VMgaCVJBBL8v0dKfCqvYHGEok6V2mqpGjRaR8GqZp91ZjYn9Bm3NAt9JKclIJ954%2BGxo0qrzqAGcPZrIQoZVWEkbQvg92OIuq0%2Fq2GlSNIx1cQ%2BwZDg6jZkobr9Ygtj%2FtsieRPxmyehh9%2BOTHFnOlRp9BMT7Q4c%3D)

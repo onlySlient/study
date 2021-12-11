@@ -1,0 +1,5 @@
+# Service Discovery
+
+> 服务发现
+> Kubernetes中为了实现服务实例间的负载均衡和不同服务间的服务发现，创造了Service对象，同时又从集群外部访问集群创建了Ingress对象。
+> [Kubernetes 之服务发现](https://link.segmentfault.com/?enc=MJm9Zu0j7W2wYTF5rndVGA%3D%3D.Vmt1vTNFKLdkHQq4vtLAJFJtHwsB5ztMxLDBYgQA9ovLUD1YBJLQAkdq%2B6py9RFozrt7QwsdzrEwgY71GeTy%2BpPJB%2BnLsDukpG7kGmtSqj0iRLzhnw61BSR760QUwMP6FpsOuiAvR3CqHLVN21iKnvfx9%2FFFS0xKO%2F0%2FbRY6uD8NdHNujJqxgmtfpOSpTn2QL%2BiXZdFxXUh8mxMjgeHPMB%2BlVlG2%2B9JMPUENfwBUGegyFpe4f3wx%2FVYevJJfB%2BoIUWZf8LbEER7kuBd4gxACTr7EcJkCnMyiisf%2BLAnn4rOHxwVXwDGg3b6KrLmck4B%2Be7z9pAIdQSr5yRJJP%2BHnnTHbyqDeB9FYZMmbGa60epw%3D)

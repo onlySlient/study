@@ -1,0 +1,6 @@
+# storage
+
+> 数据存储
+> 针对有状态服务
+> 有状态服务对应存储会存储在StatfulSet组件
+> [Kubernetes 之数据存储](https://link.segmentfault.com/?enc=AwBjUaAEQG5CyueTXf32aQ%3D%3D.yYWMN7tew%2BG0%2BYhNa9BU6nk3Y8zdut1%2B0Jnuy0CTk6khqv6VJjWD65xVhNjhzt9beLmxBXp904Jzk%2F9ho8t%2BhJZTYEkzT1p9aec5ZbmZjGn3xyET%2FWtXuHhOQ%2BU0%2BPPL1LdKQULtnui8S9dZilNLyRezUwHu3j%2FkRVjZUf32id53hKOFJZNrt721FYiW3rq0v4AYBPX4vKhgkzEimOvjjpkNs%2BWNv1ucR5Pj1WnELGanWDVls4YZRVfd14DE9GRZu%2F513ZuaUPd6zPHv7bTp5wF%2B4obwJ00ZSpTiCVwyvt4qGzDK%2FXgLIvwl5mUmTxrHPiO1dyTktZHeeu7R2HS2g2nXdRW3qtiod%2Fmi%2FLdfmic%3D)

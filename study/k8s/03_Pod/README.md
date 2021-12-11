@@ -1,0 +1,4 @@
+# POD
+
+> Pod就是最小并且最简单的Kubernetes对象
+> [Kubernetes 之 Pod 实现原理](https://link.segmentfault.com/?enc=YJcFcKrAa6Ebb3v2cUqRjw%3D%3D.kj4RHs9cZdD7LIWtIT9bTOxQ2u2wtFubHn%2BrtYbMyYonlbxP%2Bh%2FJ%2FuiPOHM0dtGhwCYHh%2B8ScO6V2n8cB%2BVXqfjJWiKr%2FhRNQluhjLTz1jQuvuDXo1k8dd%2BhYR6X%2FsNvZOAB%2BupKz4%2F2mUbMGSuWYlzJt1UtsXKfOahG3t%2BftTBDCFdYvOlaPhMuWekoYdUN4iTvKvBoxpeADBB3pFpYmFpH6xd21E5DlePtrUjSelpomKc1PgcVCx6aS%2BSWNErngGK1u5RurFr5B4KnaSh1DZnOCsxmq5cxKc0bZObubfgvt6GARWrMMeGXr738Szh2WgQzgAhcKnQmCKcrUr6xrit%2B6SZdUaB8FAo%2FBBZzWY8%3D)
