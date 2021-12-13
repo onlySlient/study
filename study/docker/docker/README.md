@@ -37,3 +37,19 @@ sudo service docker restart
 
 # 然后重开 terminal 即可
 ```
+
+## Config docker daemon in china
+
+> vim /etc/docker/daemon.json
+
+```vim
+{
+  "registry-mirrors": [
+    "https://hub-mirror.c.163.com",
+    "https://mirror.baidubce.com"
+  ]
+}
+```
+
+> sudo systemctl daemon-reload
+> sudo systemctl restart docker
