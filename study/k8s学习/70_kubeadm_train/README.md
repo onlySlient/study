@@ -95,6 +95,18 @@ kubeadm join 192.168.99.104:6443 --token ncfrid.7ap0xiseuf97gikl
     --discovery-token-ca-cert-hash sha256:47783e9851a1a517647f1986225f104e81dbfd8fb256ae55ef6d68ce9334c6a2
 ```
 
+## 运行镜像
+
+使用[app.yaml](./app.yaml)
+
+```shell
+# 运行配置
+kubectl apply -f app.yaml
+
+# 查看所有的pod状态
+kubectl get pods -A
+```
+
 ## 获取当前集群节点和状态
 
 ```shell
