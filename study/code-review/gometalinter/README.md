@@ -17,7 +17,7 @@
 rm -rf z_lint/* && echo "clean"
 
 # 配置路径
-workDirs=()
+workDirs=(arc-cmpt arc-device arc-fm arc-fusion arc-schedule arc-spatial arc-tool arc-util arc-workorder go-lib)
 
 lintPath=`pwd`/z_lint
 timeSeq=`date "+%Y-%m-%d_%H:%M:%S"`
@@ -27,12 +27,10 @@ mkdir -p $outputPath
 
 for workDir in ${workDirs[@]}
 do 
-    cd $workDir && echo "${workDir}"
+    pushd $workDir
     go mod tidy
-    # 生成代码质量信息
-    # FIXME 多维度代码质量
     golangci-lint run > "${outputPath}/${workDir}"
-    cd .. && echo `pwd`
+    popd > /dev/null
 done
 
 echo "lint successfully."
