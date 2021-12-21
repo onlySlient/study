@@ -1,0 +1,37 @@
+version: '3.9'
+
+services:
+  gitlab:
+    image: 'gitlab/gitlab-ee:latest'
+    restart: always
+    hostname: 'gitlab.slient.com'
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        external_url 'https://gitlab.slient.com'
+        # Add any other gitlab.rb configuration here, each on its own line
+    ports:
+      - '8080:80'
+      - '443:443'
+      - '23:22'
+    volumes:
+      - '$GITLAB_HOME/config:/etc/gitlab'
+      - '$GITLAB_HOME/logs:/var/log/gitlab'
+      - '$GITLAB_HOME/data:/var/opt/gitlab'
+    networks:
+      - gitlab
+
+  gitlab-runner:
+    image: 'gitlab/gitlab-runner:latest'
+    restart: always
+    depends_on:
+      - gitlab
+    privileged: true
+    volumes:
+      - '$GITLAB_RUNNER_HOME/config/gitlab-runner:/etc/gitlab-runner'
+      - '/var/run/docker.sock:/var/run/docker.sock'
+      - '$GITLAB_RUNNER_HOME//bin/docker:/bin/docker'
+    networks:
+      - gitlab
+
+networks:
+  gitlab:
