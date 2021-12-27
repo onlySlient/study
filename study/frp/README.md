@@ -99,7 +99,25 @@ curl -I http://x.x.x.x:8080
 
 ### DNS
 
-TODO,暂时不知道使用于什么场景
+```ini
+# frps.ini
+[common]
+bind_port = 7000
+
+# frpc.ini
+[common]
+server_addr = x.x.x.x
+server_port = 7000
+
+[dns]
+type = udp
+local_ip = 8.8.8.8
+local_port = 53
+remote_port = 6000
+
+# try
+dig @x.x.x.x -p 6000 www.google.com
+```
 
 ### Forward Unix domain socket
 
@@ -204,7 +222,7 @@ bind_port = 6000
 ssh -p 6000 127.0.0.1
 ```
 
-> 鉴于目前没有需求，待手动操作以下
+> TODO 鉴于目前没有需求，待手动操作以下
 
 ### p2p
 
@@ -303,7 +321,7 @@ admin_user = admin
 admin_pwd = admin
 
 # curl
-curl -I http://10.252.31.153:7400
+curl -I http://127.0.0.1:7400
 ```
 
 ## prometheus
