@@ -3,6 +3,13 @@
 > <https://github.com/fatedier/frp>  
 > frp 是一个专注于内网手机的终端的中转应用，支持TCP、UDP、HTTP可以HTTPS、等多种协议。将内网服务以安全、便捷的方式通过具有公网IP节点的中转暴露到公网。
 
+## 优缺点
+
+* 优点
+  * 开源，免费
+* 缺点
+  * ssh不稳定，经过测试`ssh`、`p2p_ssh(stcp)`，这两者都不稳定
+
 ## install on docker-compose
 
 `frps`
