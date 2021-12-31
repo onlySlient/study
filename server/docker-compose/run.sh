@@ -9,6 +9,3 @@ export USER=slient
 export PASSWD=kcwnx5tPrzpTKJ8ErHE=
 
 docker-compose -f docker-compose.yml up -d
-
-ssl_certificate certs/nginx.crt;
-    ssl_certificate_key certs/nginx.key;

@@ -7,6 +7,7 @@ services:
     hostname: "nginx"
     ports:
       - '80:80'
+      - '443:443'
     volumes:
       - "${NGINX_HOME:-/nginx}/conf.d:/etc/nginx/conf.d"
       - "${NGINX_HOME:-/nginx}/logs:/var/log/nginx"
