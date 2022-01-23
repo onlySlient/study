@@ -54,9 +54,18 @@ repo_gpgcheck=1
 gpgkey=https://mirrors.aliyun.com/kubernetes/yum/doc/yum-key.gpg https://mirrors.aliyun.com/kubernetes/yum/doc/rpm-package-key.gpg
 EOF
 # 安装kubeadm、kubectl、kubelet
-yum install -y kubectl-1.16.0-0 kubeadm-1.16.0-0 kubelet-1.16.0-0
+yum install -y kubectl kubeadm kubelet
 # 启动kubelet服务
 systemctl enable kubelet && systemctl start kubelet
+```
+
+## 卸载k8s
+
+```shell
+kubeadm reset -f
+modprobe -r ipip
+yum clean all
+yum remove kube*
 ```
 
 ## 配置master节点
@@ -123,5 +132,7 @@ kubectl get pod
    1. docker没装
    2. cgroup没有配置
       1. daemon.json加入`"exec-opts": ["native.cgroupdriver=systemd"]`
+      2. systemctl daemon-reload
+      3. systemctl restart docker
    3. health check失败
       1. 一般情况下时网络设置问题，修改init的ip/网段即可

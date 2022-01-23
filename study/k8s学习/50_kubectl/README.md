@@ -29,7 +29,6 @@
 kubectl自动补全
 
 ```shell
-source <(kubectl completion zsh)
 source <(kubectl completion bash)
 ```
 
@@ -293,4 +292,3 @@ kubectl logs mypod --namespace-test
 ```shell
 kubectl logs -f mypod -c ruby-container
 ```
-
